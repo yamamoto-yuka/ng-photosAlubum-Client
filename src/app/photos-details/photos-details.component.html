@@ -1,0 +1,11 @@
+<div class="container">
+  <div *ngIf="photo">
+    <div class="bd-placeholder-img card-img-top">
+      <img [src]="photo.url" [alt]="photo.title" />
+    </div>
+    <p class="card-text">
+      {{ photo.title | titlecase }}
+    </p>
+    <p>id: {{ photo.id }}</p>
+  </div>
+</div>
